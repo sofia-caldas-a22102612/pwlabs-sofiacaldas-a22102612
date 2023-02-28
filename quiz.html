@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+
+    <title>Damasco</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Ana Maria">
+    <meta name="description" content="Website sobre Lisboa">
+    <meta name="keywords" content="palavras chave">
+
+    <style>
+        body {background-color: bisque; font-family: Georgia, 'Times New Roman', Times, serif; color: darkslategray}
+        a{color: darkslategray;}
+        [target="blank_"]{
+            color: chocolate;
+        }
+        h2{background-color: burlywood;}
+    
+        </style>
+
+</head>
+
+<body>
+
+
+    <header></header>
+    <nav></nav>
+    <main>
+        <h1>Damasco</h1>
+        <br>
+
+        <p>
+            <a href="index.html">Introdução</a>
+            <a href="local.html">Localização</a>
+            <a href="multimedia.html">Multimedia</a>
+            <a href="info.html">Informação</a>
+            <b><a href="quiz.html" target="_blank">Quiz</a></b>
+        </p>
+
+        <h2>Quiz</h2>
+        <p>Cidade muito bonita e cheia de história.</p>
+        <fieldset>
+
+            <fieldset>
+                <legend>Conhece Damasco?</legend>
+                <p>Nome: <input type="text" name="nome"></p>
+                <p>Apelido: <input type="text" name="apelido"></p>
+                <p>Email: <input type="text" name="email"></p>
+                <input type="submit" value="enviar">
+            </fieldset>
+
+            <fieldset>
+                <legend>perguntas</legend>
+                <br>
+                <ol>
+                    <li>
+                        <p>Qual a população de Damasco?</p>
+                        <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">5,453,662</label><br />
+                        <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">3</label><br />
+                        <input type="radio" name="q1" value="c" id="q1c"><label for="q1c">2,503,000</label><br />
+                        <input type="radio" name="q1" value="d" id="q1d"><label for="q1d">76,645</label><br />
+                    </li>
+
+                    <li>
+                        <p>Onde se situa Damasco?</p>
+                        <input list="paises" name="pais">
+                        <datalist id="paises">
+                            <option value="Síria">
+                            <option value="França">
+                            <option value="Turquia">
+                        </datalist>
+                    </li>
+
+                    <li>
+                        <p>Quantos municipios tem Damasco?</p>
+                        <input type="radio" name="municipios" value="16" id="16">
+                        <label for="16">16</label>
+                        <input type="radio" name="municipios2" value="8" id="8">
+                        <label for="8">8</label>
+                           
+                    </li>
+                </ol>
+                <input type="submit">
+            </fieldset>
+
+        </fieldset>
+
+        <fieldset>
+
+        </fieldset>
+    </main>
+</body>
+
+</html>
