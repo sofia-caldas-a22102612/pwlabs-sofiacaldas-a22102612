@@ -10,14 +10,24 @@
     <meta name="keywords" content="palavras chave">
 
     <style>
-        body {background-color: bisque; font-family: Georgia, 'Times New Roman', Times, serif; color: darkslategray}
-        a{color: darkslategray;}
-        [target="blank_"]{
-            color: chocolate;
+        body {
+            background-color: bisque;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: darkslategray
         }
-        
 
-        </style>
+        a {
+            color: darkslategray;
+        }
+
+        .border {
+            background-color: burlywood;
+        }
+
+        .insideBorder {
+            background-color: rgba(213, 233, 162, 0.455);
+        }
+    </style>
 
 </head>
 
@@ -36,13 +46,14 @@
             <a href="multimedia.html">Multimedia</a>
             <a href="info.html">Informação</a>
             <b><a href="quiz.html" target="_blank">Quiz</a></b>
+            <a href="html5-css.html">HTML5-CSS</a>
         </p>
 
         <h2>Quiz</h2>
         <p>Cidade muito bonita e cheia de história.</p>
-        <fieldset>
+        <fieldset class="border">
 
-            <fieldset>
+            <fieldset class="insideBorder">
                 <legend>Conhece Damasco?</legend>
                 <p>Nome: <input type="text" name="nome"></p>
                 <p>Apelido: <input type="text" name="apelido"></p>
@@ -50,7 +61,7 @@
                 <input type="submit" value="enviar">
             </fieldset>
 
-            <fieldset>
+            <fieldset class="insideBorder" ;>
                 <legend>perguntas</legend>
                 <br>
                 <ol>
@@ -78,8 +89,21 @@
                         <label for="16">16</label>
                         <input type="radio" name="municipios2" value="8" id="8">
                         <label for="8">8</label>
-                           
+
                     </li>
+
+                    <li>
+                        <p>Quanto gostava de visitar Damasco?</p>
+                        <input type="range" min="0" max="100" name="taxa" value="0"
+                            oninput="taxaN.value = parseInt(taxa.value)">
+
+                    </li>
+
+                    <li>
+                        <p>Quando começou o conflito militar entre o Califado Ortodoxo e o Império Bizantino (cerco de
+                            Damasco): <input type="date" name="dataNascimento"></p>
+                    </li>
+
                 </ol>
                 <input type="submit">
             </fieldset>

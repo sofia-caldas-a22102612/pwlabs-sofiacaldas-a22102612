@@ -10,14 +10,24 @@
     <meta name="keywords" content="palavras chave">
 
     <style>
-        body {background-color: bisque; font-family: Georgia, 'Times New Roman', Times, serif; color: darkslategray}
-        a{color: darkslategray;}
-        [target="blank_"]{
-            color: chocolate;
+        body {
+            background-color: bisque;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: darkslategray
         }
-        
-    
-        </style>
+
+        a {
+            color: darkslategray;
+        }
+
+        .border {
+            background-color: burlywood;
+        }
+
+        .insideBorder {
+            background-color: rgba(213, 233, 162, 0.455);
+        }
+    </style>
 
 </head>
 
@@ -36,15 +46,25 @@
             <b><a href="multimedia.html" target="_blank">Multimedia</a></b>
             <a href="info.html">Informação</a>
             <a href="quiz.html">Quiz</a>
+            <a href="html5-css.html">HTML5-CSS</a>
         </p>
 
         <h2>Multimedia</h2>
         <p>Cidade muito bonita e cheia de história.</p>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/clUne5DtBsA" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+        <section>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/clUne5DtBsA"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </section>
+
+        <section class="poemBorders">
+            <p>Poema</p>
+            <div>
+                <p>escrever aqui</p>
+            </div>
+        </section>
     </main>
 </body>
 
